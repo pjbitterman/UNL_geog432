@@ -2,10 +2,15 @@
 title: "Lab01"
 author: "Patrick Bitterman"
 date: "1/30/2021"
-output:
-  pdf_document: default
-  html_document:
-    df_print: paged
+output: 
+   pdf_document: 
+      template: my_template.tex
+      keep_tex: true
+my_subtitle: "GEOG 432/832"
+fancy: true
+geometry: margin=1in
+latex_engine: pdflatex
+colorlinks: true
 ---
 
 ```{r setup, include=FALSE}

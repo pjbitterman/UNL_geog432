@@ -26,12 +26,13 @@ for i in myArray:
 print(mySum, "is the sum")
 print(mySum / len(myArray), "is the mean")
 myArray.sort()
-print(myArray[1 + len(myArray) // 2], "is the median")
+print(myArray)
+print(myArray[len(myArray) // 2], "is the median")
 
 # also numpy stuff
 
 
-# task 4: Reads the "lab01csv.csv" file, assigns it to a variable, and then prints the file line-by-line. Extra points if you can skip printing the first 2 lines.
+# task 4: Reads the "lab01textsample.txt" file, assigns it to a variable, and then prints the file line-by-line. Extra points if you can skip printing the first 2 lines.
 
 import os
 print(os.getcwd())
@@ -44,7 +45,7 @@ for line in f:
     print(line)
 
 
-# task 5: Write a function that accepts as a parameter a numeric value corresponding to the **percentage score** for the class and and returns the corresponding letter grade for the course. It must also return an appropriate message for scores outside of the correct range of scores. You don't have to bother with pluses or minuses, just full letter grades. Finally, test your function and show that it works for the scores: -5, 45, 70, 99, and 125.
+# task 5: Write a function that accepts as a parameter a numeric value corresponding to the **percentage score** for the class and returns the corresponding letter grade for the course. It must also return an appropriate message for scores outside of the correct range of scores. You don't have to bother with pluses or minuses, just full letter grades. Finally, test your function and show that it works for the scores: -5, 45, 70, 99, and 125.
 
 def calculate_grade(pct_score):
     if(pct_score < 0 or pct_score > 100):
