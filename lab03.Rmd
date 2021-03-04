@@ -1,0 +1,58 @@
+---
+title: "Lab 03"
+#author: "Dr. Patrick Bitterman"
+#date: "`r format(Sys.time(), '%Y %B %d')`"
+output: 
+   pdf_document: 
+      template: my_template.tex
+      keep_tex: true
+my_subtitle: "GEOG 432/832"
+fancy: true
+geometry: margin=1in
+latex_engine: pdflatex
+colorlinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab 03: Spatial and tabular analysis in ArcGIS Pro
+
+### Read the instructions COMPLETELY before starting the lab
+
+This lab builds on many of the discussions and exercises from class. There is no introductory exercises or background information. Complete the tasks below and answer the questions that follow. As always, there are multiple ways accomplishing the task(s) at hand.
+
+The following tasks use the feature classes found in the "lab03data.zip" file on Canvas.
+- Census file - DESCRIPTION
+- NHDPlus dataset - DESCRIPTION with FIELDS OF INTEREST... NEED the file with urban, forest, and agriculture
+- Lake Champlain
+
+
+## Task 1: Analyze a hydrologic dataset
+
+1.1. Write a Python script that finds the NHDPlus segment with the *second* largest *absolute difference* between phosphorus load (LOAD OR YIELD)? from agricultural land use and from forested land use. Your script must use a search cursor.
+
+1.2. Find the top 10 NHDPlus segments by total load (DEFINE HERE). Export the data to your analysis tool/softwas of choice (e.g., Excel, R). Create a scatterplot (e.g., https://en.wikipedia.org/wiki/Scatter_plot) with agricultural load (OR YIELD) on the x-axis and forested land use on the y-axis (OR YIELD???). You must use a SearchCursor in your script.
+
+1.3. Make another scatterplot. This time, plot the distance from each NHDPlus segment to Lake Champlain on the x-axis, and plot total load (OR YIELD??) on the y-axis.
+
+
+## Task 2: Nebraska counties census data
+
+2.1 Using an UpdateCursor, delete all counties that do NOT start with the letter "L". Print the names of the remaining counties and their population of female residents under the age of 5.
+
+2.2 The next tasks is to calculate an index of social vulnerability. For the sake of this exercise, we will calculate a very simple vulnerability index with only 2 components **(note, vulnerability is MUCH, MUCH more complex)**. We will use the indicators: income ("PerCapInc") and the proportion vacant homes ("Vacant" / "TotalUnits"). We will assume vulnerability is *negatively* correlated with income, and *positively* correlated with vacancy. This means you will need to account for different directions in the two indicators. Further, we will assume our initial analysis has shown that income is *twice as strong of a predictor* of vulnerability as the vacancy rate. **Your job:** develop a metric of "vulnerability" using these two indicators. Map the result using a choroplth map. 
+*(Note, I am NOT concerned that you build the perfect indicator or even understand the concept of social vulnerability. I want to see that you can think through indicators of different magnitude, order, and importance.)*
+
+\newpage
+## What to turn in:
+
+- Task 1: your code for 1.1, 1.2, and 1.3, scatterplots form 1.2 and 1.3
+
+- Task 2: your code for 2.1, 2.2, your map from 2.2
+
+### Answers to the following question:
+
+For task 2.2, describe how you chose to construct your indicator. What problems did you encounter and how did you solve them? You must address: 1) how you handled the different direction of effects on vulnerability, 2) how you calculated different importance (or "weights") of the two metrics, and 3) how you handled the fact the two metrics are in different units? Again, there is no right or wrong answer (I know you're not an expert on vulnerability). Rather, I want you to demostrate thoughtfulness in your design.
+
