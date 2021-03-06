@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  3 MAR 2021 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  4 MAR 2021 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,70 +438,70 @@ LaTeX Info: Redefining \nameref on input line 86.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 95.
 
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+08.
+(/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-19.
+43.
 (/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-19.
+43.
 (/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-119.
+143.
 (/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-119.
+143.
 (/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 119.
+(Font)              <10> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 119.
+(Font)              <7> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 119.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 119
+(Font)              <5> on input line 143.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143
 .
 (/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 119
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143
 .
 (/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/Users/pbitterman2/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
 x.map}
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-58.
-(/Users/pbitterman2/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2] (./lab03.aux)
+] [2] (./lab03.aux)
 Package rerunfilecheck Info: File `lab03.out' has not changed.
-(rerunfilecheck)             Checksum: 2A795BC50D315601B2BC3FC1FE81A364;1555.
+(rerunfilecheck)             Checksum: F503403CD1174D3E767F8BA492C70930;1555.
  ) 
 Here is how much of TeX's memory you used:
- 9613 strings out of 481250
- 141578 string characters out of 5914459
- 431924 words of memory out of 5000000
- 26391 multiletter control sequences out of 15000+600000
+ 9612 strings out of 481250
+ 141563 string characters out of 5914459
+ 434924 words of memory out of 5000000
+ 26390 multiletter control sequences out of 15000+600000
  438292 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,11n,74p,396b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,11n,74p,396b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}
 {/Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</U
 sers/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
 Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></
 Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on lab03.pdf (2 pages, 87534 bytes).
+Output written on lab03.pdf (2 pages, 88927 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  15 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
