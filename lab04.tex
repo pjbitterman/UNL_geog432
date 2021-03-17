@@ -1,0 +1,216 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            pdftitle={Lab 04},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{Lab 04}
+    \author{}
+    \date{}
+  
+
+% change section title styling
+\usepackage{sectsty}
+\sectionfont{\normalsize\normalfont\itshape}
+\subsectionfont{\normalsize\normalfont}
+
+% use fancyhdr style
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO, LE]{Lab 04}
+\fancyhead[RO, RE]{GEOG 432/832}
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\vspace*{-1cm}\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \@author
+  
+  \@date
+  
+\end{flushleft}\egroup
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\hypertarget{lab-04-geometries-spatial-queriest-and-raster-data-set}{%
+\section{Lab 04: Geometries, spatial queriest, and raster data
+set}\label{lab-04-geometries-spatial-queriest-and-raster-data-set}}
+
+\hypertarget{read-the-instructions-completely-before-starting-the-lab}{%
+\subsubsection{Read the instructions COMPLETELY before starting the
+lab}\label{read-the-instructions-completely-before-starting-the-lab}}
+
+This lab is the final exercise using ArcGIS Pro and ArcPy. It builds on
+many of the discussions and exercises from class and will require you to
+draw connections among the units we have covered this far. There are no
+introductory exercises or background information. Complete the tasks
+below and answer the questions that follow. As always, there are
+multiple ways accomplishing the task(s) at hand.
+
+The following tasks use the feature classes and raster datasets found in
+the ``lab04data.zip'' file on Canvas.
+
+\begin{itemize}
+\tightlist
+\item
+  State\_Park\_Locations.shp: state park locations (points) in Nebraska
+\item
+  Streams\_303\_d\_.shp: Nebraska streams that are impaired according to
+  Section 303d of the Clean Water Act
+\item
+  Municipal\_Boundaries: The boundaries for cities and towns in Nebraska
+\item
+  lancaster\_county.shp: Lancaster County, NE
+\item
+  nlcd\_lc\_14n.tif: land cover for Lancaster County. From the National
+  Land Cover Dataset
+\item
+  ned30lc.tif: a digitial elevation model for Lancaster County. From the
+  National Elevation Dataset
+\end{itemize}
+
+\hypertarget{task-1-geometries-and-spatial-queries}{%
+\subsection{Task 1: Geometries and spatial
+queries}\label{task-1-geometries-and-spatial-queries}}
+
+Write a Python script that does all of the following the following:
+
+\begin{itemize}
+\tightlist
+\item
+  For all state parks within 3 miles of a municipal boundary
+\item
+  Prints:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The name of the park
+  \item
+    Size in acres formatted to 2 decimal places
+  \item
+    The name of the nearest municipality
+  \item
+    BONUS POINTS: include whether the park is \emph{more than} 10 miles
+    from a 303d stream
+  \end{itemize}
+\end{itemize}
+
+Example format:
+
+\begin{verbatim}
+Arbor Lodge SHP is 56.79 acres, is in Otoe County, is nearest to Nebraska City, 
+and is not more than 10 miles from a 303d stream
+\end{verbatim}
+
+NOTE: At minimum you must use a spatial query and a search cursor.
+
+\hypertarget{task-2-mock-suitability-analysis}{%
+\subsection{Task 2: Mock suitability
+analysis}\label{task-2-mock-suitability-analysis}}
+
+The blue-footed great plains jackalope is rarely sighted anymore and has
+thus been placed on the the state's protected species list. It is your
+job to find the suitable habitat for the species within Lancaster
+County. Suitable habitat includes ALL of the following:
+
+\begin{itemize}
+\tightlist
+\item
+  Within 2 km of a state park
+\item
+  1 km or more away from a 303d stream
+\item
+  More than 5 km from municipal boundaries
+\item
+  More than 401 meters in elevation
+\item
+  On areas of ``moderate'' slope. I leave you to develop your own
+  classification scheme for slope
+\end{itemize}
+
+Make a map of the suitable habitat for the blue-footed great plains
+jackalope using proper cartographic practices
+
+\newpage
+
+\hypertarget{what-to-turn-in}{%
+\subsection{What to turn in:}\label{what-to-turn-in}}
+
+\begin{itemize}
+\item
+  Task 1: your code
+\item
+  Task 2: your code, your map
+\end{itemize}
+
+\hypertarget{answers-to-the-following-questions}{%
+\subsubsection{Answers to the following
+questions:}\label{answers-to-the-following-questions}}
+
+Q1. What challenges did you encounter during this lab? How did you
+overcome them?
+
+Q2. What new techniques did you learn during this lab? During the first
+``half'' of the semester/labs?
+
+Q3. Provide \emph{constructive} feedback about the labs thus far. For
+example: what did you like? Dislike? Were the labs too difficult? Too
+easy? Too long?
+
+
+\end{document}

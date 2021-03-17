@@ -1,0 +1,82 @@
+---
+title: "Lab 04"
+#author: "Dr. Patrick Bitterman"
+#date: "`r format(Sys.time(), '%Y %B %d')`"
+output: 
+   pdf_document: 
+      template: my_template.tex
+      keep_tex: true
+my_subtitle: "GEOG 432/832"
+fancy: true
+geometry: margin=1in
+latex_engine: pdflatex
+colorlinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab 04: Geometries, spatial queriest, and raster data set
+
+### Read the instructions COMPLETELY before starting the lab
+
+This lab is the final exercise using ArcGIS Pro and ArcPy. It builds on many of the discussions and exercises from class and will require you to draw connections among the units we have covered this far. There are no introductory exercises or background information. Complete the tasks below and answer the questions that follow. As always, there are multiple ways accomplishing the task(s) at hand.
+
+The following tasks use the feature classes and raster datasets found in the "lab04data.zip" file on Canvas.
+
+* State_Park_Locations.shp: state park locations (points) in Nebraska
+* Streams_303_d_.shp: Nebraska streams that are impaired according to Section 303d of the Clean Water Act
+* Municipal_Boundaries: The boundaries for cities and towns in Nebraska
+* lancaster_county.shp: Lancaster County, NE
+* nlcd_lc_14n.tif: land cover for Lancaster County. From the National Land Cover Dataset
+* ned30lc.tif: a digitial elevation model for Lancaster County. From the National Elevation Dataset
+
+
+## Task 1: Geometries and spatial queries
+
+Write a Python script that does all of the following the following:
+
+* For all state parks within 3 miles of a municipal boundary
+* Prints:
+  * The name of the park
+  * Size in acres formatted to 2 decimal places
+  * The name of the nearest municipality
+  * BONUS POINTS: include whether the park is *more than* 10 miles from a 303d stream
+
+Example format:
+
+```code
+Arbor Lodge SHP is 56.79 acres, is in Otoe County, is nearest to Nebraska City, 
+and is not more than 10 miles from a 303d stream
+```
+
+NOTE: At minimum you must use a spatial query and a search cursor.
+
+## Task 2: Mock suitability analysis
+
+The blue-footed great plains jackalope is rarely sighted anymore and has thus been placed on the the state's protected species list. It is your job to find the suitable habitat for the species within Lancaster County. Suitable habitat includes ALL of the following:
+
+* Within 2 km of a state park
+* 1 km or more away from a 303d stream
+* More than 5 km from municipal boundaries
+* More than 401 meters in elevation
+* On areas of "moderate" slope. I leave you to develop your own classification scheme for slope
+
+Make a map of the suitable habitat for the blue-footed great plains jackalope using proper cartographic practices
+
+\newpage
+## What to turn in:
+
+- Task 1: your code
+
+- Task 2: your code, your map
+
+### Answers to the following questions:
+
+Q1. What challenges did you encounter during this lab? How did you overcome them?
+
+Q2. What new techniques did you learn during this lab? During the first "half" of the semester/labs?
+
+Q3. Provide *constructive* feedback about the labs thus far. For example: what did you like? Dislike? Were the labs too difficult? Too easy? Too long?
+
