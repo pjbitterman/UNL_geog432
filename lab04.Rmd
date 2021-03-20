@@ -17,7 +17,7 @@ colorlinks: true
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Lab 04: Geometries, spatial queriest, and raster data set
+# Lab 04: Geometries, spatial queries, and raster data set
 
 ### Read the instructions COMPLETELY before starting the lab
 
@@ -35,7 +35,7 @@ The following tasks use the feature classes and raster datasets found in the "la
 
 ## Task 1: Geometries and spatial queries
 
-Write a Python script that does all of the following the following:
+Write a Python script that does all of the following:
 
 * For all state parks within 3 miles of a municipal boundary
 * Prints:
@@ -47,7 +47,7 @@ Write a Python script that does all of the following the following:
 Example format:
 
 ```code
-Arbor Lodge SHP is 56.79 acres, is in Otoe County, is nearest to Nebraska City, 
+Arbor Lodge SHP is 56.79 acres, is nearest to Nebraska City, 
 and is not more than 10 miles from a 303d stream
 ```
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  17 MAR 2021 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  19 MAR 2021 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,12 +452,12 @@ x.map}
 
 ] [2] (./lab04.aux)
 Package rerunfilecheck Info: File `lab04.out' has not changed.
-(rerunfilecheck)             Checksum: 84B87246E1160FF78CE69BA537FB054B;1582.
+(rerunfilecheck)             Checksum: 2CADDEB84EC1C270B4CC0775E5CF3B88;1577.
  ) 
 Here is how much of TeX's memory you used:
  9555 strings out of 481250
- 139966 string characters out of 5914459
- 434930 words of memory out of 5000000
+ 139964 string characters out of 5914459
+ 434929 words of memory out of 5000000
  26363 multiletter control sequences out of 15000+600000
  426356 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -468,7 +468,7 @@ sers/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
 Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></
 Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><
 /Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on lab04.pdf (2 pages, 106494 bytes).
+Output written on lab04.pdf (2 pages, 106114 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
