@@ -1,0 +1,195 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            pdftitle={Lab 05},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{Lab 05}
+    \author{}
+    \date{}
+  
+
+% change section title styling
+\usepackage{sectsty}
+\sectionfont{\normalsize\normalfont\itshape}
+\subsectionfont{\normalsize\normalfont}
+
+% use fancyhdr style
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO, LE]{Lab 05}
+\fancyhead[RO, RE]{GEOG 432/832}
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\vspace*{-1cm}\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \@author
+  
+  \@date
+  
+\end{flushleft}\egroup
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\hypertarget{lab-05-introduction-to-or-refresher-of-data-science-tools-in-python}{%
+\section{Lab 05: Introduction to (or refresher of) data science tools in
+Python}\label{lab-05-introduction-to-or-refresher-of-data-science-tools-in-python}}
+
+\hypertarget{read-the-instructions-completely-before-starting-the-lab}{%
+\subsubsection{Read the instructions COMPLETELY before starting the
+lab}\label{read-the-instructions-completely-before-starting-the-lab}}
+
+This lab is the first exercise in the second half of the class, which
+focuses on spatial data science using open source Python tools. This lab
+is designed to help you gain some basic familiarity with data structures
+and functions, in particular the DataFrame.
+
+This following tasks use lab05data.zip found on Canvas. This archive
+includes a single CSV file: \emph{lab05\_climate\_data.csv}. This file
+includes a limited set of \emph{daily} climate variables for Lincoln, NE
+in 2020.
+
+\begin{itemize}
+\tightlist
+\item
+  month: numeric representation month
+\item
+  day: numeric day of month
+\item
+  year: 2020
+\item
+  day\_of\_week: String for the day of week of the observation
+\item
+  t\_max: maximum daily temperature
+\item
+  t\_min: minimum daily temperature
+\item
+  t\_mean: arithmatic mean daily temperature
+\item
+  precip: daily precipitation (a ``T'' value means ``trace
+  precipitation'')
+\end{itemize}
+
+Using this file, complete the following tasks below. Show your work. All
+results must be ``printed'' to the Jupyter notebook or to the console.
+The in-class exercises and examples here:
+\url{https://darribas.org/gds_course/content/bB/lab_B.html} will aid you
+in your task. You may need to consult the help documentation for pandas
+or matplotlib (or whichever packages you use) to achieve your tasks.
+Note, you will need to \emph{programmatically} deal with trace
+precipitation values.
+
+\hypertarget{tasks}{%
+\subsubsection{Tasks:}\label{tasks}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  On what day of the year (yyyy-mm-dd) did the coldest minimum
+  temperature (t\_min) occur? The second coldest?
+\item
+  How many days had measurable precipitation in July 2020?
+\item
+  What is the month with the highest \emph{average} maximum temperature
+  (t\_max)?
+\item
+  What day of the week had the greatest \emph{total} precipitation in
+  2020? The lowest \emph{total} precipitation?
+\item
+  Print the 7 days with the highest minimum temperature (t\_min)
+\item
+  Make a histogram of maximum daily temperature (t\_max)
+\item
+  Make a histogram of daily precipitation. Bonus points if you add a
+  smoothing function (e.g., kernel density estimator) to the plot
+\item
+  Make a scatter plot with minimum daily temperature (t\_min) on the
+  x-axis and daily precipitation on the y-axis. Make the points
+  different colors by month. For example, January would plot as red,
+  February as purple, etc.
+\end{enumerate}
+
+\hypertarget{questions}{%
+\subsubsection{Questions:}\label{questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What previous experience (in Python or other languages) do/did you
+  have with ``data science'' (broadly conceived)?
+\item
+  What new skills did you learn (or refresh) in this lab?
+\item
+  What did you find particularly challenging? How did you overcome
+  this/these challenge(s)?
+\end{enumerate}
+
+\hypertarget{what-to-turn-in}{%
+\subsubsection{What to turn in}\label{what-to-turn-in}}
+
+\begin{itemize}
+\item
+  Your Jupyter notebook (or Python script). I must be able to run your
+  code - do not turn in a screenshot or code pasted into a Microsoft
+  Word document
+\item
+  The answers to the above questions
+\end{itemize}
+
+
+\end{document}
