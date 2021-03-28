@@ -353,11 +353,11 @@ d_age_sorted.head()
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-marpit-pagination="32" data-marpit-pagination-total="33" style="--paginate:true;">
 <h1>Grouping</h1>
 <h3>One step at a time</h3>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>d_smaller = d[[<span class="hljs-string">&#x27;MedianAge&#x27;</span>, <span class="hljs-string">&#x27;MedFamInc&#x27;</span>, <span class="hljs-string">&#x27;Total&#x27;</span>, <span class="hljs-string">&#x27;pop_cat&#x27;</span>]]
-d_smaller[<span class="hljs-string">&#x27;pop_cat&#x27;</span>] = np.where(d_smaller[<span class="hljs-string">&#x27;Total&#x27;</span>] &gt; <span class="hljs-number">20000</span>, <span class="hljs-string">&quot;Big&quot;</span>, <span class="hljs-string">&quot;Small&quot;</span>)
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+d[<span class="hljs-string">&#x27;pop_cat&#x27;</span>] = np.where(d[<span class="hljs-string">&#x27;Total&#x27;</span>] &gt; <span class="hljs-number">20000</span>, <span class="hljs-string">&quot;Big&quot;</span>, <span class="hljs-string">&quot;Small&quot;</span>)
 
+d_smaller = d[[<span class="hljs-string">&#x27;MedianAge&#x27;</span>, <span class="hljs-string">&#x27;MedFamInc&#x27;</span>, <span class="hljs-string">&#x27;Total&#x27;</span>, <span class="hljs-string">&#x27;pop_cat&#x27;</span>]]
 d_pop_grouped = d_smaller.groupby(<span class="hljs-string">&#x27;pop_cat&#x27;</span>)
-d_pop_grouped
 </span></span></foreignObject></svg></code></pre>
 <pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>d_pop_grouped.<span class="hljs-built_in">sum</span>()
 </span></span></foreignObject></svg></code></pre>
