@@ -1,0 +1,59 @@
+---
+title: "Lab 06"
+#author: "Dr. Patrick Bitterman"
+#date: "`r format(Sys.time(), '%Y %B %d')`"
+output: 
+   pdf_document: 
+      template: my_template.tex
+      keep_tex: true
+my_subtitle: "GEOG 432/832"
+fancy: true
+geometry: margin=1in
+latex_engine: pdflatex
+colorlinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab 06: Exploratory spatial data analysis and visualization
+
+### Read the instructions COMPLETELY before starting the lab
+
+This lab is intended to further develop your exploratory spatial data anlaysis skills, including visualization. This lab builds upon your in-class activities from this week, which themselves are inspired by the ENVS 363/563 course at the University of Liverpool (see https://darribas.org/gds_course/content/bC/lab_C.html). This lab ALSO gives you significant latitude to use datasets, methosds, and visualizations of your own choosing and interests. There are limited tasks for this lab.
+
+### Tasks:
+
+1. Select one of the datasets from the libpysal library (see https://pysal.org/libpysal/notebooks/examples.html for details). The dataset should include a polygon feature class, as you will make a choropleth map in a later task
+
+2. If it is not projected, assign it a proper projection. Show this projection in the notebook.
+
+3. Perform ESDA on the dataset, including at a minimum:
+
+    - Basic summary statistics on at least one relevant attribute
+    - Plot of numeric data (e.g., histogram, scatter plot, NOT A MAP)
+    - A plot of the geometry, styled in some way that is *appropriate* (e.g., alpha, colour)
+  
+4. Make a choropleth map of a *sensible* variable in your dataset. Choose an appropriate data classification scheme
+
+5. Plot a kernel density estimation plot with the breaks included (see the Jupyter notbook that I provided on Canvas for examples)
+
+6. Find ANOTHER dataset from the web *that overlaps spatially with your dataset*. For example, a streets file for the city of Chicago
+
+7. Make another map, this time with multiple layers. The base layer is the choropleth map from above. The top layer is a visualization of the datset you found. Give it a title.
+
+### Questions:
+
+1. Describe your dataset and the ESDA you performed. What did you learn?
+
+2. What classification scheme did you use? How many classes? Why?
+
+3. In your final multi-layer map, why did you choose your particular symbolization method?
+
+### What to turn in
+
+- Your Jupyter notebook (or Python script). I must be able to run your code - do not turn in a screenshot or code pasted into a Microsoft Word document
+
+- The answers to the above questions
+
