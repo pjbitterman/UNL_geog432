@@ -1,0 +1,199 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            pdftitle={Lab 07},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{Lab 07}
+    \author{}
+    \date{}
+  
+
+% change section title styling
+\usepackage{sectsty}
+\sectionfont{\normalsize\normalfont\itshape}
+\subsectionfont{\normalsize\normalfont}
+
+% use fancyhdr style
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO, LE]{Lab 07}
+\fancyhead[RO, RE]{GEOG 432/832}
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\vspace*{-1cm}\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \@author
+  
+  \@date
+  
+\end{flushleft}\egroup
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\hypertarget{lab-07-building-spatial-weights-matrices}{%
+\section{Lab 07: Building spatial weights
+matrices}\label{lab-07-building-spatial-weights-matrices}}
+
+\hypertarget{read-the-instructions-completely-before-starting-the-lab}{%
+\subsubsection{Read the instructions COMPLETELY before starting the
+lab}\label{read-the-instructions-completely-before-starting-the-lab}}
+
+This lab will help you become more comfortable with developing spatial
+weights matrices and working with spatially-lagged variables. It will
+also require you link multiple ``hands on'' portions of in-class work
+such that you demonstrate your understanding of underlying concepts and
+theory.
+
+\hypertarget{tasks}{%
+\subsubsection{Tasks:}\label{tasks}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Select one of the datasets from the libpysal library (see
+  \url{https://pysal.org/libpysal/notebooks/examples.html} for details).
+  The dataset should include a polygon feature class, as you will make a
+  choropleth map in a later task. It should also contain an
+  ``interesting'' variable that you will use in a Moran plot.
+\item
+  If it is not projected, assign it a proper projection. Show this
+  projection in the notebook.
+\item
+  Develop a contiguity-based spatial weights matrix of your choosing
+  (i.e., rook or queen)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Plot a histogram of the number of neighbors
+  \item
+    ``Print'' to the notebook the average number of neighbors
+  \item
+    Choose one areal unit of interest (e.g., a county), make a plot of
+    the unit and its neighbors, similar to what we completed in class.
+    NOTE, you MUST use a different (but appropriate) color scheme than
+    what we used in class
+  \item
+    Row-standardized the \emph{W}
+  \item
+    Using a variable of interest in your dataset, calcuate the a lagged
+    variable
+  \item
+    Make a Moran Plot
+  \end{enumerate}
+\item
+  Repeat \#3 above with a W developed using the distance-band method
+\item
+  Using the dataset from \#4 (the distance-band-based W), write a script
+  that:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Finds those observations in the H-H category
+  \item
+    Plots a choropleth map of your dataset with a categorical color
+    scheme, where the shading corresponds to the Moran plot (really,
+    ``LISA'') quadrants. Thus, your map will have four shades of color.
+  \end{enumerate}
+\end{enumerate}
+
+\emph{Note, you have been provided all the information/knowledge/skills
+required to accomplish this task. THINK about how the lagged variables,
+the Moran plot, and quadrants work from a conceptual persepctive FIRST.}
+
+HINT: \texttt{numpy.where()} is a useful function for generating a new
+attribute based on a conditional test
+
+\hypertarget{questions}{%
+\subsubsection{Questions:}\label{questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Describe in your own words: \emph{what is a spatially-lagged
+  variable?}
+\item
+  How does your analysis in this lab (as simple as it is) differ by how
+  you have formalized W (e.g., space, neighbors) in two different
+  methods? How might it affect analysis?
+\item
+  What does it mean if an observation falls in the ``H-L'' quadrant? Why
+  might it be useful to detect such occurances?
+\item
+  Walk me through your process in completing task 5 above. What
+  challenges did you encounter and how did you overcome them?
+\end{enumerate}
+
+\hypertarget{what-to-turn-in}{%
+\subsubsection{What to turn in}\label{what-to-turn-in}}
+
+\begin{itemize}
+\item
+  Your Jupyter notebook (or Python script). I must be able to run your
+  code - do not turn in a screenshot or code pasted into a Microsoft
+  Word document
+\item
+  The answers to the above questions
+\end{itemize}
+
+
+\end{document}

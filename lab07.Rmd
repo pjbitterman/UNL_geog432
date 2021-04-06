@@ -1,0 +1,68 @@
+---
+title: "Lab 07"
+#author: "Dr. Patrick Bitterman"
+#date: "`r format(Sys.time(), '%Y %B %d')`"
+output: 
+   pdf_document: 
+      template: my_template.tex
+      keep_tex: true
+my_subtitle: "GEOG 432/832"
+fancy: true
+geometry: margin=1in
+latex_engine: pdflatex
+colorlinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab 07: Building spatial weights matrices
+
+### Read the instructions COMPLETELY before starting the lab
+
+This lab will help you become more comfortable with developing spatial weights matrices and working with spatially-lagged variables. It will also require you link multiple "hands on" portions of in-class work such that you demonstrate your understanding of underlying concepts and theory.
+
+### Tasks:
+
+1. Select one of the datasets from the libpysal library (see https://pysal.org/libpysal/notebooks/examples.html for details). The dataset should include a polygon feature class, as you will make a choropleth map in a later task. It should also contain an "interesting" variable that you will use in a Moran plot.
+
+2. If it is not projected, assign it a proper projection. Show this projection in the notebook.
+
+3. Develop a contiguity-based spatial weights matrix of your choosing (i.e., rook or queen)
+
+    1. Plot a histogram of the number of neighbors
+    2. "Print" to the notebook the average number of neighbors
+    3. Choose one areal unit of interest (e.g., a county), make a plot of the unit and its neighbors, similar to what we completed in class. NOTE, you MUST use a different (but appropriate) color scheme than what we used in class
+    4. Row-standardized the *W*
+    5. Using a variable of interest in your dataset, calcuate the a lagged variable
+    6. Make a Moran Plot
+    
+4. Repeat #3 above with a W developed using the distance-band method
+    
+5. Using the dataset from #4 (the distance-band-based W), write a script that:
+    
+    1. Finds those observations in the H-H category
+    2. Plots a choropleth map of your dataset with a categorical color scheme, where the shading corresponds to the Moran plot (really, "LISA") quadrants. Thus, your map will have four shades of color. 
+    
+*Note, you have been provided all the information/knowledge/skills required to accomplish this task. THINK about how the lagged variables, the Moran plot, and quadrants work from a conceptual persepctive FIRST.*
+
+HINT: ```numpy.where()``` is a useful function for generating a new attribute based on a conditional test
+
+
+### Questions:
+
+1. Describe in your own words: *what is a spatially-lagged variable?*
+
+2. How does your analysis in this lab (as simple as it is) differ by how you have formalized W (e.g., space, neighbors) in two different methods? How might it affect analysis?
+
+3. What does it mean if an observation falls in the "H-L" quadrant? Why might it be useful to detect such occurances?
+
+4. Walk me through your process in completing task 5 above. What challenges did you encounter and how did you overcome them?
+
+### What to turn in
+
+- Your Jupyter notebook (or Python script). I must be able to run your code - do not turn in a screenshot or code pasted into a Microsoft Word document
+
+- The answers to the above questions
+
