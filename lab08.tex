@@ -1,0 +1,191 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            pdftitle={Lab 08},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{Lab 08}
+    \author{}
+    \date{}
+  
+
+% change section title styling
+\usepackage{sectsty}
+\sectionfont{\normalsize\normalfont\itshape}
+\subsectionfont{\normalsize\normalfont}
+
+% use fancyhdr style
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO, LE]{Lab 08}
+\fancyhead[RO, RE]{GEOG 432/832}
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\vspace*{-1cm}\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \@author
+  
+  \@date
+  
+\end{flushleft}\egroup
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\hypertarget{lab-08-indicators-of-spatial-autocorrelation}{%
+\section{Lab 08: Indicators of spatial
+autocorrelation}\label{lab-08-indicators-of-spatial-autocorrelation}}
+
+\hypertarget{read-the-instructions-completely-before-starting-the-lab}{%
+\subsubsection{Read the instructions COMPLETELY before starting the
+lab}\label{read-the-instructions-completely-before-starting-the-lab}}
+
+In this lab, you will calculate global and local indicators of spatial
+autocorrelation. This process includes developing spatial weights
+matrices and working with spatially-lagged variables (which you
+completed in the previous lab). It will also require you link multiple
+``hands on'' portions of in-class work such that you demonstrate your
+understanding of underlying concepts and theory.
+
+\hypertarget{tasks}{%
+\subsubsection{Tasks:}\label{tasks}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Using the dataset found in unit12inclassdata.zip on Canvas, select a
+  variable of interest. As discussed during lecture, real-world data is
+  often messy. To create your the shapefile, I started with the
+  \textbf{ACS\_10\_5YR\_County} dataset found at
+  \url{https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html}
+  -\textgreater{} 2010 Census -\textgreater{} 2006 - 2010 Detailed
+  Tables -\textgreater{} Counties. The direct link can be found here:
+  \url{http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip}
+\end{enumerate}
+
+Because there were a VERY large number of attributes (columns) I further
+subsetted the data prior to exporting FROM a feature class in a
+GeoDatabase TO a shapefile. During this export, ArcGIS renamed many of
+the fields because the shapefile specification only allows attribute
+names to be 10 characters long or less. The fields I exported include
+the range from ``DP3\_HC01\_VC04'' to ``DP3\_HC04\_VC93'' (original
+names). You will need to link the OLD field name (also found in the CSV)
+to the new ESRI-generated sequential scheme, as we discussed in class. I
+understand this step may be confusing at first, but it is representative
+of real-world problem solving with often messy data. Try some of the
+strategies we discussed in class. If you have questions, please contact
+me EARLY.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Create a spatial subset of the US, with at AT MINIMUM 4 states,
+  MAXIMUM 7 states. States must be contiguous
+\item
+  Develop a distance-based spatial weights matrix. Do all necessary and
+  proper preparatory work (see previous labs and lectures if you need a
+  refresher)
+\item
+  Make a histogram of your chosen variable
+\item
+  Make a choropleth map of your chosen variable. Choose an appropriate
+  data classification scheme
+\item
+  Plot a kernel density estimation plot with the breaks included
+\item
+  Make Moran Plot of your chosen variable
+\item
+  Calculate Moran's I for your dataset
+\item
+  Calculate local indicators of spatial autocorrelation (LISAs) for your
+  chosen variable. Make a map that shows statistically significant HH,
+  HL, LH, and LL observations and shades them accordingly
+\end{enumerate}
+
+\hypertarget{questions}{%
+\subsubsection{Questions:}\label{questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Describe in your own words \emph{how Moran's I is calculated}
+\item
+  Explain and defend your formalization of W. Why is the representation
+  of space that you chose appropriate for your analysis? Make a
+  convincing case.
+\item
+  Reflect on the 8 labs from this semester. How does your skillset
+  differ from when you started? How does using open source tools compare
+  to your experience in ArcGIS Pro and ArcPy?
+\end{enumerate}
+
+\hypertarget{what-to-turn-in}{%
+\subsubsection{What to turn in}\label{what-to-turn-in}}
+
+\begin{itemize}
+\item
+  Your Jupyter notebook (do not turn it in as a Python script). I must
+  be able to run your code - do not turn in a screenshot or code pasted
+  into a Microsoft Word document
+\item
+  The answers to the above questions
+\end{itemize}
+
+
+\end{document}
