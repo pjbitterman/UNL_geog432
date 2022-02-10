@@ -4,7 +4,7 @@ author: "Dr. Patrick Bitterman"
 #date: "`r format(Sys.time(), '%Y %B %d')`"
 output: 
    pdf_document: 
-      template: my_template.tex
+      template: default
       keep_tex: true
 my_subtitle: "GEOG 432/832"
 fancy: true
@@ -25,10 +25,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Part 1 will familiarize you with some functions we have discussed by not yet used in class. 
 
-1. Download and extract the lab02data.zip file from Canvas to a sensible location on your computer. For the purposes of these examples, I will assume your workspace is setup as:
+1. Download and extract the ```lab02data.zip``` file from the course GitHub respository to a sensible location on your computer. For the purposes of these examples, I will assume your workspace is setup as:
 
 ```{code}
-arcpy.env.workspace = "C://GEOG432//lab02/"
+arcpy.env.workspace = "C://GEOG432//lab02//"
 ```
 
 However, you may use whatever workspace location you choose.
@@ -39,8 +39,6 @@ However, you may use whatever workspace location you choose.
 arcpy.Exists("hospitals.shp")
 ``` 
 The result is True.
-
-You may need to reenter portions of earlier code. In this case, the necessary code would consist of the following:
 
 The **Exists()** function returns a Boolean value. Several other ArcPy functions also are not geoprocessing tools, and some of them are used later in this exercise and others.
 
@@ -88,7 +86,7 @@ In addition to functions, ArcPy also contains several classes. Classes are often
 
 The spatial reference of this shapefile is missing. As a result, the hospitals show up in northern Finland instead of Austin, Texas. This happens because the coordinates are displayed in the default Web Mercator coordinate system.
 
-![No projection](./labs/images/lab02_noproj.png)
+![No projection](../images/lab02_noproj.png)
 
 You will use the Define Projection tool to fix it. The syntax of the Define Projection tool is as follows:
 
@@ -152,7 +150,7 @@ The result of running the Define Project tool is that the feature class hospital
 
 The hospitals are now showing where they belong—i.e., in Austin, Texas.
 
-![in Texas](./labs/images/lab02_intexas.png)
+![in Texas](../images/lab02_intexas.png)
 
 \newpage
 ## Part 2: Some simple analysis on your own
@@ -160,13 +158,15 @@ The hospitals are now showing where they belong—i.e., in Austin, Texas.
 Often when we produce analysis, we rely on other tools (e.g., data visualization, statistical software) **in addition to** our geoprocessing workflows. For this part of the lab, you will be tasked to complete  a simple analysis of distance in Vermont. 
 
 ### Your data:
+
 - vt_munis.shp: a feature class that contains all of the Vermont municipalities (i.e., towns, cities, and villages) that intersect the Lake Champlain Basin
+
 - lake_champlain.shp: a feature class of Lake Champlain
 
 ### Your tasks:
 
 1. Write a Python script (using arcpy) that calculates the distance FROM ALL municipalities TO Lake Champlain
-2. Create a map (using the GUI) that symbolizes that distance in a meaningful way. This will serve as a quick check that you have successfully calculated distance
+2. Create a map (using the ArcGIS Pro GUI) that symbolizes that distance in a meaningful way. This will serve as a quick check that you have successfully calculated distance
 3. Produce a histogram that plots the distribution of distance values. You may use any tool you like (e.g., R, Excel, something from the web)
 4. Using arcpy, reproject the *vt_munis* feature class (whatever projection you wish), **then recalculate distance(s) to Lake Champlain**
 5. Finally, **for each municipality**, calculate the *differences* between the 2 distances and report using summary statistics (mean, median, standard deviation)
@@ -189,6 +189,7 @@ In lab 1 (part 2), you completed the following:
 3. Compare the model-generated code to what you wrote. Answer the questions below:
 
 \newpage
+
 ## Questions:
 
 ### Part 2:
