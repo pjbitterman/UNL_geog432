@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 # Final Project
@@ -18,9 +18,9 @@ Choose one of the following resarch questions below:
 
 1. How has land use in the CBW changed over time and how is it predicted to change in the future? Are there any spatial patterns you can detect in this land use change?
 
-2. How and where has sea level rise (SLR) occurred, and which areas or communities might be vulnerable to future SLR?
+2. How and where has sea level rise (SLR) occurred in the region, and which areas or communities might be vulnerable to future SLR?
 
-3. What management activites have taken place (and where) that may affect the movement of Brook Trout in the region? Are there any clear spatial patterns to these habitat-altering activities?
+3. What management activities have taken place (and where) that may affect the movement of Brook Trout in the region? Are there any clear spatial patterns to these habitat-altering activities?
 
 4. How have flood hazards changed over time and space? Which areas, communities, or populations are at increased risk of flooding?
 
@@ -28,12 +28,14 @@ Choose one of the following resarch questions below:
 
 6. Protected areas are designed to protect vital species habitat across the watershed and in the Bay. What are the spatial relationships among protected areas, habitat, and public acess to the Bay?
 
+7. Something else of your choosing
+
 ## Deliverable 1: project proposal (20 points)
 
-You must submit a proposal for your projet detailing the following items:
+You must submit a proposal for your project detailing the following items:
 
 1. The research question you chose
-2. Preliminary or sample data
+2. Preliminary or sample data (can be a list of sources). Should NOT be speculative
 3. Any preliminary work (strongly encouraged)
 
 
@@ -47,7 +49,7 @@ You will give a 3-5 minute presentation to the class that will cover:
 4. Evidence of work
 5. Any issues or challenges you have encountered
 
-The class is expected to listen attentively and ask questions of the speaker. You should be prepared to answer questions from your peers and instructor.
+The class/audience is expected to listen attentively and ask questions of the speaker. The presenter should be prepared to answer questions from your peers and instructor.
 
 ## Deliverable 3: final report (120 points)
 
@@ -84,5 +86,6 @@ In this presentation, you will at a minimum discuss:
 ### Code
 
 - You must also submit your code and any data (if sharable and of reasonable size). I must be able to run the code on a similar computing environment to yours
+
 - I expect your code to be readable and documented at a minimal level. However, graduate students must fully document all functions and tasks completed by their code. You do NOT need to document every instance variable or line of code, but your script should be exceptionally well-formatted and documented. There are multiple examples of standards and best practices on the web.
 
