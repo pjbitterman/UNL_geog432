@@ -4,7 +4,7 @@ title: "Lab 04"
 #date: "`r format(Sys.time(), '%Y %B %d')`"
 output: 
    pdf_document: 
-      template: my_template.tex
+      template: ../my_template.tex
       keep_tex: true
 my_subtitle: "GEOG 432/832"
 fancy: true
@@ -59,9 +59,10 @@ The blue-footed great plains jackalope is rarely sighted anymore and has thus be
 
 * Within 2 km of a state park
 * 1 km or more away from a 303d stream
-* More than 5 km from municipal boundaries
+* More than 3 km from municipal boundaries
 * More than 401 meters in elevation
 * On areas of "moderate" slope. I leave you to develop your own classification scheme for slope
+* Herbaceous or shrubland land cover types (note: you will need to find metadata on the NLCD layer for this requirement)
 
 Make a map of the suitable habitat for the blue-footed great plains jackalope using proper cartographic practices
 
