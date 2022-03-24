@@ -1,7 +1,7 @@
 ---
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 # Final Project
@@ -38,6 +38,13 @@ You must submit a proposal for your project detailing the following items:
 2. Preliminary or sample data (can be a list of sources). Should NOT be speculative
 3. Any preliminary work (strongly encouraged)
 
+Other details:
+
+- 1-2 pages, inclusive of figures
+- Microsoft Word document or PDF
+- 1-inch margins
+- Font: Times New Roman, size 12, 1.5 spacing or less
+- Cite all sources using a standard referencing format (e.g., Chicago, APA, your favorite journal). However, you may NOT use an end note style.
 
 ## Deliverable 2: in-class project update (10 points)
 
@@ -58,12 +65,12 @@ Your final report will follow the format of a short technical report where you s
 1. A short introduction to the topic and research question
 2. A methods section detailing the data you used and the work you completed
 3. A results section that explains, in detail, what you accomplished. Be sure to connect to how you defined success in the project proposal (e.g., what should be understood from them)
-4. A dicussion section that covers the implications of your results, including a critical self-reflection of the project (e.g., what limitations, assumptions, or uncertainties are present). Also, what have you learned and what would you do differently next time (and why)?
+4. A discussion section that covers the implications of your results, including a critical self-reflection of the project (e.g., what limitations, assumptions, or uncertainties are present). Also, what have you learned and what would you do differently next time (and why)?
 
 
 ## Deliverable 4: in-class final presentation (graduate students only)
 
-Graduate students will also give a 4-5 minute presentation during the final week of class detailing the full extent of your project work and accomplishements
+Graduate students will also give a 4-5 minute presentation during the final week of class detailing the full extent of your project work and accomplishments
 
 In this presentation, you will at a minimum discuss:
 
