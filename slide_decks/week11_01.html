@@ -127,7 +127,7 @@ schools
 </ul>
 <pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>streets.loc[<span class="hljs-number">2500</span>, <span class="hljs-string">&#x27;geometry&#x27;</span>] <span class="hljs-comment"># you don&#x27;t always get a good look the geometry, depending on scale</span>
 </span></span></foreignObject></svg></code></pre>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>muni_boundaries.loc[<span class="hljs-number">577</span>, <span class="hljs-string">&#x27;geometry&#x27;</span>]
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>county_boundaries.loc[<span class="hljs-number">91</span>, <span class="hljs-string">&#x27;geometry&#x27;</span>]
 </span></span></foreignObject></svg></code></pre>
 <h3>What happened?</h3>
 </section>
@@ -231,7 +231,7 @@ street_length.head()
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-marpit-pagination="22" data-marpit-pagination-total="23" style="--paginate:true;" data-size="16:9">
 <h1>And buffers are straightforward:</h1>
 <h3>Break it down:</h3>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>schools14n = schools.to_crs(munis_14n.crs) <span class="hljs-comment"># set to the CRS of an existing layer</span>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>schools14n = schools.to_crs(counties_14n.crs) <span class="hljs-comment"># set to the CRS of an existing layer</span>
 schools14n.crs
 
 school_buff = schools14n.buffer(<span class="hljs-number">500</span>) <span class="hljs-comment"># 500m buffer </span>
