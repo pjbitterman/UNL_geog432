@@ -4,7 +4,7 @@ title: "Lab 05"
 #date: "`r format(Sys.time(), '%Y %B %d')`"
 output: 
    pdf_document: 
-      template: my_template.tex
+      template: ../my_template.tex
       keep_tex: true
 my_subtitle: "GEOG 432/832"
 fancy: true
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This lab is the first exercise in the second half of the class, which focuses on spatial data science using open source Python tools. This lab is designed to help you gain some basic familiarity with data structures and functions, in particular the DataFrame.
 
-This following tasks use lab05data.zip found on Canvas. This archive includes a single CSV file: *lab05_climate_data.csv*. This file includes a limited set of *daily* climate variables for Lincoln, NE in 2020.
+This following tasks use the CSV file: *lab05_climate_data.csv*, which can be found in the /labs/lab05/ directory of the Course GitHub repository (https://github.com/pjbitterman/UNL_geog432/tree/main/labs/lab05). This file includes a limited set of *daily* climate variables for Lincoln, NE in 2020.
 
 * month: numeric representation month
 * day: numeric day of month
