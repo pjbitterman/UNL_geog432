@@ -27,7 +27,7 @@ This lab will help you become more comfortable with developing spatial weights m
 
 1. Select one of the datasets from the libpysal library (see https://pysal.org/libpysal/notebooks/examples.html for details). The dataset should include a polygon feature class, as you will make a choropleth map in a later task. It should also contain an "interesting" variable that you will use in a Moran plot.
 
-2. If it is not projected, assign it a proper projection. Show this projection in the notebook.
+2. If it is not projected, reproject it to an appropriate CRS. Show the CRS in the notebook.
 
 3. Develop a contiguity-based spatial weights matrix of your choosing (i.e., rook or queen)
 

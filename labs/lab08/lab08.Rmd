@@ -4,7 +4,7 @@ title: "Lab 08"
 #date: "`r format(Sys.time(), '%Y %B %d')`"
 output: 
    pdf_document: 
-      template: my_template.tex
+      template: ../my_template.tex
       keep_tex: true
 my_subtitle: "GEOG 432/832"
 fancy: true
@@ -25,7 +25,7 @@ In this lab, you will calculate global and local indicators of spatial autocorre
 
 ### Tasks:
 
-1. Using the dataset found in unit12inclassdata.zip on Canvas, select a variable of interest. As discussed during lecture, real-world data is often messy. To create your the shapefile, I started with the **ACS_10_5YR_County** dataset found at https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html -> 2010 Census -> 2006 - 2010 Detailed Tables -> Counties. The direct link can be found here: http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip
+1. Using the dataset found in unit12inclassdata.zip in our GitHub repository, **select a variable of interest**. As discussed during lecture, real-world data is often messy. To create your the shapefile, I started with the **ACS_10_5YR_County** dataset found at https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html -> 2010 Census -> 2006 - 2010 Detailed Tables -> Counties. The direct link can be found here: http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip
 
 Because there were a VERY large number of attributes (columns) I further subsetted the data prior to exporting FROM a feature class in a GeoDatabase TO a shapefile. During this export, ArcGIS renamed many of the fields because the shapefile specification only allows attribute names to be 10 characters long or less. The fields I exported include the range from "DP3_HC01_VC04" to "DP3_HC04_VC93" (original names). You will need to link the OLD field name (also found in the CSV) to the new ESRI-generated sequential scheme, as we discussed in class. I understand this step may be confusing at first, but it is representative of real-world problem solving with often messy data. Try some of the strategies we discussed in class. If you have questions, please contact me EARLY.
 

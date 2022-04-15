@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.22)  13 APR 2022 08:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.22)  15 APR 2022 09:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,7 +440,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  60i,11n,63p,396b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/pbitterman2/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on lab07.pdf (2 pages, 112090 bytes).
+Output written on lab07.pdf (2 pages, 112079 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
