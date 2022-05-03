@@ -10,7 +10,7 @@ paginate: true
 
 #
 
-## Unit 13.02: Wrap up
+## Unit 15.02: Wrap up
 
 ### Dr. Bitterman
 
@@ -98,10 +98,6 @@ By the end of the term, students will be able to successfully:
 # For next class
 
 - No class meeting on Friday (work on your own, but let me know if questions and I can be present)
-- Lab 8 due Thursday
-- Completed project signup sheet on Canvas (discussion board)
-    - PRACTICE, PRACTICE, PRACTICE
-    - You're expected to listen attentively AND ask questions
 - Do your evaluations (please)
 
 ---
