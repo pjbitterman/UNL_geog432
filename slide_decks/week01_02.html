@@ -69,9 +69,9 @@ mySandwich.Add(Jelly)
 <h1 id="classes">Classes</h1>
 <p>Why so easy?</p>
 <ul>
-<li>Someone did the work!
+<li>Someone did the work! They defined:
 <ul>
-<li>Defined what a sandwich is</li>
+<li>What a sandwich is</li>
 <li>What you can do with it</li>
 </ul>
 </li>
@@ -184,54 +184,6 @@ mySandwich.Add(Jelly)
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-marpit-pagination="16" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
-<h1 id="a-first-example">A first example</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Opens a feature class from a geodatabase and prints the spatial reference</span>
- 
-<span class="hljs-keyword">import</span> arcpy
- 
-featureClass = <span class="hljs-string">&quot;C:/Data/USA/USA.gdb/Boundaries&quot;</span>
- 
-<span class="hljs-comment"># Describe the feature class and get its spatial reference   </span>
-desc = arcpy.Describe(featureClass)
-spatialRef = desc.spatialReference
- 
-<span class="hljs-comment"># Print the spatial reference name</span>
-<span class="hljs-built_in">print</span> (spatialRef.Name)
-
-</code></pre>
-<h2 id="what-are-some-concepts-that-weve-talked-about-are-demonstrated-in-this-code-block">What are some concepts that we've talked about are demonstrated in this code block?</h2>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-marpit-pagination="17" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
-<h1 id="more-practice">More practice</h1>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-marpit-pagination="18" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
-<h1 id="python-the-hard-way">Python the hard way</h1>
-<ul>
-<li>A sort of &quot;classic&quot; resource for learning Python <em>by doing</em>, even if you don't know <strong>what</strong> you're doing</li>
-<li>But it's in Python 2.7, while we're using Python 3</li>
-<li>It's unfortunately been monetized: <a href="https://learncodethehardway.org/python/">https://learncodethehardway.org/python/</a></li>
-<li>But some resources (like I'm co-opting here) are available on the web: <a href="http://cglab.ca/~morin/teaching/1405/lpthw/book/ex1.html">http://cglab.ca/~morin/teaching/1405/lpthw/book/ex1.html</a></li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-marpit-pagination="19" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
-<h1 id="a-good-first-program">A good first program</h1>
-<p>Open Jupyter Notebooks and create a new notebook for today's work</p>
-<p>Enter the following - type it in, do <strong>NOT</strong> copy-paste</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello World!&quot;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello Again&quot;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I like typing this.&quot;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;This is fun.&quot;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Yay! Printing.&#x27;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I&#x27;d much rather you &#x27;not&#x27;.&quot;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;I &quot;said&quot; do not touch this.&#x27;</span>)
-</code></pre>
-<p>Run the program</p>
-<ul>
-<li>What happens?</li>
-<li>Do you note anything special about the formatting of the strings?</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-marpit-pagination="20" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
 <h1 id="comments-and-octothorpes">Comments and octothorpes</h1>
 <p>99 PI: <a href="https://99percentinvisible.org/episode/octothorpe/">https://99percentinvisible.org/episode/octothorpe/</a></p>
 <p>Comments are very important in your programs. They are used to tell you what something does in English, and they also are used to disable parts of your program if you need to remove them temporarily. Here's how you use comments in Python:</p>
@@ -247,7 +199,37 @@ spatialRef = desc.spatialReference
 </code></pre>
 <p>Comment-out a print command and run again - what happens differently?</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-marpit-pagination="21" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-marpit-pagination="17" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
+<h1 id="a-first-example">A first example</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Opens a feature class from a geodatabase and prints the spatial reference</span>
+ 
+<span class="hljs-keyword">import</span> arcpy
+ 
+featureClass = <span class="hljs-string">&quot;C:/Data/USA/USA.gdb/Boundaries&quot;</span>
+ 
+<span class="hljs-comment"># Describe the feature class and get its spatial reference   </span>
+desc = arcpy.Describe(featureClass)
+spatialRef = desc.spatialReference
+ 
+<span class="hljs-comment"># Print the spatial reference name</span>
+<span class="hljs-built_in">print</span> (spatialRef.Name)
+
+</code></pre>
+<h2 id="what-are-some-of-the-concepts-weve-talked-about-that-are-demonstrated-in-this-code-block">What are some of the concepts we've talked about that are demonstrated in this code block?</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-marpit-pagination="18" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
+<h1 id="more-practice">More practice</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-marpit-pagination="19" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
+<h1 id="python-the-hard-way">Python the hard way</h1>
+<ul>
+<li>A sort of &quot;classic&quot; resource for learning Python <em>by doing</em>, even if you don't know <strong>what</strong> you're doing</li>
+<li>But it's in Python 2.7, while we're using Python 3</li>
+<li>It's unfortunately been monetized: <a href="https://learncodethehardway.org/python/">https://learncodethehardway.org/python/</a></li>
+<li>But some resources (like I'm co-opting here) are available on the web: <a href="http://cglab.ca/~morin/teaching/1405/lpthw/book/ex1.html">http://cglab.ca/~morin/teaching/1405/lpthw/book/ex1.html</a></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-marpit-pagination="20" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
 <h1 id="numbers-and-math">Numbers and math</h1>
 <p>Every programming language has some kind of way of doing numbers and math.</p>
 <ul>
@@ -262,9 +244,14 @@ spatialRef = desc.spatialReference
 <li><code>&gt;=</code> greater-than-or-equal</li>
 </ul>
 </section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-marpit-pagination="21" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
+<h1 id="paired-programming-exercises">Paired programming exercises</h1>
+<h2 id="1-find-a-buddy">1. Find a buddy</h2>
+<h2 id="2-open-a-jupyter-notebook-wherever">2. Open a Jupyter notebook (wherever)</h2>
+</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-marpit-pagination="22" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
 <h1 id="numbers-and-math-part-2">Numbers and math part 2</h1>
-<p>Write one at a time and calculate what the output will be prior to running each command:</p>
+<p>Write one at a time and STOP TO THINK/CALCULATE what the output will be prior to running each command:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I will now count my chickens:&quot;</span>)
 
 <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hens&quot;</span>, <span class="hljs-number">25</span> + <span class="hljs-number">30</span> / <span class="hljs-number">6</span>)
@@ -318,15 +305,15 @@ average_passengers_per_car = passengers / cars_driven
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-marpit-pagination="24" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
-<h1 id="do-it-yourself-but-lets-start-together">Do it yourself (but let's start together)</h1>
+<h1 id="now-do-it-yourself-but-lets-start-together">Now do it yourself (but let's start together)</h1>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-marpit-pagination="25" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
 <h1 id="say-hello">Say hello</h1>
-<p>Create a string variable called x and assign it the value &quot;Hello&quot;. Display the contents of the x variable in the Console.</p>
+<p>Create a string variable called <code>x</code> and assign it the value &quot;Hello&quot;. Display the contents of the x variable in the Console.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-marpit-pagination="26" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
 <h1 id="concatenate-two-strings">Concatenate two strings</h1>
-<p>Create a string variable called <em>first</em> and assign to it your first name. Likewise, create a string variable called <em>last</em> and assign to it your last name. Concatenate (merge) the two strings together, making sure to also include a space between them.</p>
+<p>Create a string variable called <code>first</code> and assign to it your first name. Likewise, create a string variable called <code>last</code> and assign to it your last name. Concatenate (merge) the two strings together, making sure to also include a space between them.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-marpit-pagination="27" data-marpit-pagination-total="28" style="--paginate:true;" data-size="16:9">
 <h1 id="do-some-easy-math-and-report-results">Do some easy math and report results</h1>
