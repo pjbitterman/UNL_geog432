@@ -14,7 +14,7 @@ You will be able to find most of the relevant data for the research questions be
 
 ## Research questions
 
-Choose one of the following resarch questions below:
+Choose one of the following research questions below:
 
 1. How has land use in the CBW changed over time and how is it predicted to change in the future? Are there any spatial patterns you can detect in this land use change?
 
@@ -26,16 +26,18 @@ Choose one of the following resarch questions below:
 
 5. What are the spatial patterns of climate change over the CBW region? For example, how have temperature and precipitation changed over time and space?
 
-6. Protected areas are designed to protect vital species habitat across the watershed and in the Bay. What are the spatial relationships among protected areas, habitat, and public acess to the Bay?
+6. Protected areas are designed to protect vital species habitat across the watershed and in the Bay. What are the spatial relationships among protected areas, habitat, and public access to the Bay?
 
-7. Something else of your choosing
+7. What is the extent of hardened shoreline in specific areas of the Bay? How does the amount of protected shoreline relate to the presence/location of sensitive or protected areas?
+
+8. Something else of your choosing
 
 ## Deliverable 1: project proposal (20 points)
 
 You must submit a proposal for your project detailing the following items:
 
 1. The research question you chose
-2. Preliminary or sample data (can be a list of sources). Should NOT be speculative
+2. Preliminary or sample data (can be a list of sources). Should NOT be speculative.
 3. Any preliminary work (strongly encouraged)
 
 Other details:
@@ -70,7 +72,7 @@ Your final report will follow the format of a short technical report where you s
 
 ## Deliverable 4: in-class final presentation (graduate students only)
 
-Graduate students will also give a 4-5 minute presentation during the final week of class detailing the full extent of your project work and accomplishments
+Graduate students will also give a 5-8 minute presentation during the final week of class detailing the full extent of your project work and accomplishments
 
 In this presentation, you will at a minimum discuss:
 
