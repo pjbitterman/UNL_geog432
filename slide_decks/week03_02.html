@@ -31,7 +31,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-marpit-pagination="4" data-marpit-pagination-total="32" style="--paginate:true;" data-size="16:9">
 <h1 id="tools-and-parameters">Tools and parameters</h1>
 <ul>
-<li>In Python, geoprocessing tools are referred to by name</li>
+<li>In arcpy, geoprocessing tools are referred to by name</li>
 <li>Tool name != tool label (but often similar-ish)... (e.g., the name of the <strong>Add Field</strong> tool in the Data Management toolbox is <code>AddField</code> in ArcPy)</li>
 </ul>
 <h3 id="-2"></h3>
@@ -137,7 +137,7 @@ arcpy.analysis.Clip(<span class="hljs-string">&quot;streams.shp&quot;</span>, <s
 </ul>
 </li>
 </ul>
-<h3 id="can-we-think-of-any-examples-weve-seen-so-far">Can we think of any examples we've seen so far?</h3>
+<h3 id="can-we-think-of-any-examples-of-requiredoptional-weve-seen-so-far">Can we think of any examples of required/optional we've seen so far?</h3>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-marpit-pagination="10" data-marpit-pagination-total="32" style="--paginate:true;" data-size="16:9">
 <h1 id="using-parameters">Using parameters</h1>
@@ -216,6 +216,7 @@ arcpy.Buffer_analysis(<span class="hljs-string">&quot;roads&quot;</span>, <span 
 <li>Empty string: <code>&quot;&quot;</code></li>
 <li>Number sign (octothorpe) <em>in a string</em>: <code>&quot;#&quot;</code></li>
 <li>Using None: <code>None</code></li>
+<li><em>Be explicit</em></li>
 </ul>
 <h3 id="examples">Examples:</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">arcpy.Buffer_analysis(<span class="hljs-string">&quot;roads&quot;</span>, <span class="hljs-string">&quot;buffer&quot;</span>, <span class="hljs-string">&quot;100 METERS&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, 
@@ -324,14 +325,12 @@ arcpy.Copy_management(infc, outfc)
 <h1 id="more-practice">More practice</h1>
 <ul>
 <li>The &quot;week03inclass.zip&quot; data I provided has multiple feature classes</li>
-<li>Create a new code chunk that:
-<ol>
-<li>uses at least 2 of these files</li>
-<li>uses at least 2 tools, one of which is <strong>NOT</strong> <code>Clip_analysis</code></li>
-<li>Uses variable names to abstract your code and avoid hard coding in parameters</li>
-</ol>
-</li>
 </ul>
+<h2 id="create-a-new-code-chunk-that">Create a new code chunk that:</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code> 1. uses at least 2 of these files
+ 2. uses at least 2 tools, one of which is **NOT** ```Clip_analysis```
+ 3. Uses variable names to abstract your code and avoid hard coding in parameters
+</code></pre>
 <h3 id="if-we-have-time-well-discuss-what-you-did-at-the-end-of-class">If we have time, we'll discuss what you did at the end of class</h3>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-marpit-pagination="25" data-marpit-pagination-total="32" style="--paginate:true;" data-size="16:9">
@@ -431,6 +430,8 @@ arcpy.Clip_analysis(inFc, clipFc, outputFc)
 <ol>
 <li>Calculate the length of streams in Sarpy county. Print the value to the console with a reasonable message as before.</li>
 <li>How many counties in Nebraska have more than 1 state park within their boundaries? How many have zero?</li>
+<li>Check whether the CRS of the <code>State_Park_Locations</code> and <code>lancaster_county</code> files are equivalent</li>
+<li>What is the area of Lancaster County? In which units?</li>
 </ol>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-marpit-pagination="32" data-marpit-pagination-total="32" style="--paginate:true;" data-size="16:9">
@@ -439,7 +440,7 @@ arcpy.Clip_analysis(inFc, clipFc, outputFc)
 <li>Readings
 <ul>
 <li>Chapter 5 (if you haven't already)</li>
-<li>Paper posted to Canvas (for next Thursday)</li>
+<li>Wilson et al. 2020. Come with <strong>at least one</strong> (more is ok/great) discussion questions. We are going to discuss the paper as in a seminar</li>
 </ul>
 </li>
 <li>Practice!</li>
