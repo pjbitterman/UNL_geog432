@@ -22,7 +22,6 @@
 <li>Open discussion</li>
 <li>Discussion and exercises</li>
 <li>For next class</li>
-<li>Maybe some work time?</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-marpit-pagination="3" data-marpit-pagination-total="29" style="--paginate:true;" data-size="16:9">
@@ -53,6 +52,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-marpit-pagination="5" data-marpit-pagination-total="29" style="--paginate:true;" data-size="16:9">
 <h2 id="but-what-if-we-want-to-know-more-about-our-data">But what if we want to know more about our data?</h2>
+<h3 id="what-canshould-we-do">What can/should we do?</h3>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-marpit-pagination="6" data-marpit-pagination-total="29" style="--paginate:true;" data-size="16:9">
 <h1 id="describing-data">Describing data</h1>
@@ -84,7 +84,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-marpit-pagination="8" data-marpit-pagination-total="29" style="--paginate:true;" data-size="16:9">
 <h1 id="describe"><code>Describe()</code></h1>
 <ul>
-<li><code>Describe()</code> returns an object of type Describe</li>
+<li><code>arcpy.Describe()</code> returns an object of type Describe</li>
 <li>Describe object properties are <em>dynamic</em> - differ by the object being described!
 <ul>
 <li>Flexible</li>
@@ -146,7 +146,7 @@ desc = arcpy.da.Describe(<span class="hljs-string">&quot;C:/YOURLOCATION/Streams
 <h1 id="so-how-is-this-useful">So how is this useful?</h1>
 <p>Textbook example:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> arcpy
-arcpy.env.workspace = <span class="hljs-string">&quot;C:/Data&quot;</span>
+arcpy.env.workspace = <span class="hljs-string">&quot;C:/Data&quot;</span> <span class="hljs-comment">#might be different location</span>
 infc = <span class="hljs-string">&quot;streams.shp&quot;</span>
 clipfc = <span class="hljs-string">&quot;study.shp&quot;</span>
 outfc = <span class="hljs-string">&quot;streams_clip.shp&quot;</span>
@@ -187,6 +187,7 @@ desc = arcpy.da.Describe(element)
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-marpit-pagination="17" data-marpit-pagination-total="29" style="--paginate:true;" data-size="16:9">
 <h1 id="lets-use-it-with-our-data-back-to-our-earlier-example">Let's use it with our data (back to our earlier example)</h1>
+<h3 id="you-dont-have-to-do-all-of-the-print-statements-but-do-some">You don't have to do ALL of the print statements (but do some)</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> arcpy
 desc = arcpy.da.Describe(<span class="hljs-string">&quot;C:/YOURLOCATION/Streams_303_d_.shp&quot;</span>)
 <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Shape type:&quot;</span> + desc[<span class="hljs-string">&quot;shapeType&quot;</span>])
