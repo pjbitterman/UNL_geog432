@@ -100,7 +100,7 @@ the tasks below and answer the questions that follow. As always, there
 are multiple ways accomplishing the task(s) at hand.
 
 The following tasks use the feature classes found in the
-``lab03data.zip'' file on Canvas.
+``lab03data.zip'' file on in the course GitHub repository:
 
 \begin{itemize}
 \tightlist
@@ -135,18 +135,18 @@ dataset}\label{task-1-analyze-a-hydrologic-dataset}}
 1.1. Write a Python script that finds the NHDPlus segment with the
 \emph{second} largest \emph{absolute difference} between phosphorus
 yield from agricultural land use and phosphorus yield from forested land
-use. Your script must use a SearchCursor.
+use. Your script \emph{must} use a SearchCursor.
 
 1.2. Find the top 10 NHDPlus segments by total phosphorus yield (yield
-is nutrients per unit area per unit time {[}kg/ha/yr{]}). Export the
-data to your analysis tool/software of choice (e.g., Excel, R). Create a
-scatterplot (e.g., \url{https://en.wikipedia.org/wiki/Scatter_plot})
-with agricultural yield on the x-axis and forested yield on the y-axis.
-You must use a SearchCursor in your script.
+is nutrients per unit area per unit time {[}kg/ha/yr{]}). Using your
+analysis tool/software of choice (e.g., Excel, R), create a scatterplot
+(e.g., \url{https://en.wikipedia.org/wiki/Scatter_plot}) with
+agricultural yield on the x-axis and forested yield on the y-axis. You
+\emph{must} use a SearchCursor in your script.
 
-1.3. Make another scatterplot, this time with all NHDPlus segments. Plot
-the distance from each NHDPlus segment to Lake Champlain on the x-axis,
-and plot total phosphorus yield on the y-axis.
+1.3. Make another scatterplot, this time containing data from all
+NHDPlus segments. Plot the distance from each NHDPlus segment to Lake
+Champlain on the x-axis, and plot total phosphorus yield on the y-axis.
 
 \hypertarget{task-2-nebraska-counties-census-data}{%
 \subsection{Task 2: Nebraska counties census
@@ -162,11 +162,11 @@ index with only 2 components \textbf{(note, vulnerability is MUCH, MUCH
 more complex)}. We will use the indicators: \textbf{income}
 (``PerCapInc'') and the \textbf{proportion vacant homes} (``Vacant'' /
 ``TotalUnits''). We will assume vulnerability is \emph{negatively}
-correlated with income, and \emph{positively} correlated with vacancy.
-This means you will need to account for different directions in the two
-indicators. Further, we will assume our initial analysis has shown that
-income is \emph{twice as strong of a predictor} of vulnerability than
-the vacancy rate.
+correlated with income, and \emph{positively} correlated with vacancy
+rates. This means you will need to account for different directions in
+the two indicators. Further, we will assume our initial analysis has
+shown that income is \emph{twice as strong of a predictor} of
+vulnerability than the vacancy rate.
 
 \textbf{Your job:} develop a metric of ``vulnerability'' using these two
 indicators. Map the result using a choropleth map. Take your time to
