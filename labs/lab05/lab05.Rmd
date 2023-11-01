@@ -31,10 +31,10 @@ This following tasks use the CSV file: *lab05_climate_data.csv*, which can be fo
 * day_of_week: String for the day of week of the observation
 * t_max: maximum daily temperature
 * t_min: minimum daily temperature
-* t_mean: arithmatic mean daily temperature
+* t_mean: arithmetic mean daily temperature
 * precip: daily precipitation (a "T" value means "trace precipitation")
 
-Using this file, complete the following tasks below. Show your work. All results must be "printed" to the Jupyter notebook or to the console. The in-class exercises and examples here: https://darribas.org/gds_course/content/bB/lab_B.html will aid you in your task. You may need to consult the help documentation for pandas or matplotlib (or whichever packages you use) to achieve your tasks. Note, you will need to *programmatically* deal with trace precipitation values.
+Using this file, complete the following tasks below. Show your work. All results must be "printed" to the Jupyter notebook or to the console. The in-class exercises and examples here: https://darribas.org/gds_course/content/bB/lab_B.html will aid you in your task. As they discuss in the preceeding link, real world data is often messy. You WILL need to engage in data munging to clean up some of the fields to make them useful. You may need to consult the help documentation for pandas or matplotlib (or whichever packages you use) to achieve your tasks. Note, you will need to *programmatically* deal with trace precipitation values and any other clean up tasks.
 
 ### Tasks:
 
