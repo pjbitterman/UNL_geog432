@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xalan="http://xml.apache.org/xalan" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.isotc211.org/2005/gmd">
+    <fileIdentifier>
+        <gco:CharacterString>00CAE310-E646-49C3-A52D-81A0CAB24A72</gco:CharacterString>
+    </fileIdentifier>
+    <language>
+        <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+    </language>
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <contact>
+        <CI_ResponsibleParty>
+            <individualName>
+                <gco:CharacterString>State  GIS Coordinator</gco:CharacterString>
+            </individualName>
+            <organisationName>
+                <gco:CharacterString>State of Nebraska</gco:CharacterString>
+            </organisationName>
+            <positionName>
+                <gco:CharacterString>State GIS Coordinator</gco:CharacterString>
+            </positionName>
+            <contactInfo>
+                <CI_Contact>
+                    <address>
+                        <CI_Address>
+                            <deliveryPoint>
+                                <gco:CharacterString>501 S 14th St</gco:CharacterString>
+                            </deliveryPoint>
+                            <city>
+                                <gco:CharacterString>Lincoln</gco:CharacterString>
+                            </city>
+                            <administrativeArea>
+                                <gco:CharacterString>NE</gco:CharacterString>
+                            </administrativeArea>
+                            <postalCode>
+                                <gco:CharacterString>68508</gco:CharacterString>
+                            </postalCode>
+                        </CI_Address>
+                    </address>
+                    <onlineResource>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>withheld</URL>
+                            </linkage>
+                            <protocol>
+                                <gco:CharacterString>website</gco:CharacterString>
+                            </protocol>
+                            <function>
+                                <CI_OnLineFunctionCode codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#napCI_OnLineFunctionCode" codeListValue="webMapService" codeSpace="ISOTC211/19139/NAP">webMapService</CI_OnLineFunctionCode>
+                            </function>
+                        </CI_OnlineResource>
+                    </onlineResource>
+                </CI_Contact>
+            </contactInfo>
+            <role>
+                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+            </role>
+        </CI_ResponsibleParty>
+    </contact>
+    <dateStamp>
+        <gco:Date>2020-04-08</gco:Date>
+    </dateStamp>
+    <metadataStandardName>
+        <gco:CharacterString>NAP - Metadata</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>1.2</gco:CharacterString>
+    </metadataStandardVersion>
+    <referenceSystemInfo>
+        <MD_ReferenceSystem>
+            <referenceSystemIdentifier>
+                <RS_Identifier>
+                    <code>
+                        <gco:CharacterString>4926</gco:CharacterString>
+                    </code>
+                </RS_Identifier>
+            </referenceSystemIdentifier>
+        </MD_ReferenceSystem>
+    </referenceSystemInfo>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>Census Tracts 2010</gco:CharacterString>
+                    </title>
+                    <date>
+                        <CI_Date>
+                            <date>
+                                <gco:Date>2020-04-06</gco:Date>
+                            </date>
+                            <dateType>
+                                <CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" codeSpace="ISOTC211/19115">creation</CI_DateTypeCode>
+                            </dateType>
+                        </CI_Date>
+                    </date>
+                    <citedResponsibleParty>
+                        <CI_ResponsibleParty>
+                            <individualName>
+                                <gco:CharacterString>State  GIS Coordinator</gco:CharacterString>
+                            </individualName>
+                            <organisationName>
+                                <gco:CharacterString>State of Nebraska</gco:CharacterString>
+                            </organisationName>
+                            <positionName>
+                                <gco:CharacterString>State GIS Coordinator</gco:CharacterString>
+                            </positionName>
+                            <contactInfo>
+                                <CI_Contact>
+                                    <address>
+                                        <CI_Address>
+                                            <deliveryPoint>
+                                                <gco:CharacterString>501 S 14th St</gco:CharacterString>
+                                            </deliveryPoint>
+                                            <city>
+                                                <gco:CharacterString>Lincoln</gco:CharacterString>
+                                            </city>
+                                            <administrativeArea>
+                                                <gco:CharacterString>NE</gco:CharacterString>
+                                            </administrativeArea>
+                                            <postalCode>
+                                                <gco:CharacterString>68508</gco:CharacterString>
+                                            </postalCode>
+                                        </CI_Address>
+                                    </address>
+                                </CI_Contact>
+                            </contactInfo>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </citedResponsibleParty>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>This data set is from the US Census Bureau and should be used with any related census data such as Blocks and tracts. TIGER, TIGER/Line, and Census TIGER are registered trademarks of the 
+      U.S. Census Bureau.  ZCTA is a trademark of the U.S. Census Bureau.  The 108th CD Census 2000 TIGER/Line files are an extract of selected geographic and cartographic information from the Census TIGER  database.  The TIGER/Line data are not in a mapping projection even  though most of the features were scanned directly from source maps that were in a projection.  The North American Datum of 1983 (NAD83) 
+      is the coordinate datum used for the 48 contiguous states, the District of Columbia, Alaska, Puerto Rico, and the Virgin Islands of  the United States.  Regional datums are used for Hawaii and the Pacific Island Areas.  The geographic coverage for a single 
+      TIGER/Line file is a county or statistical equivalent entity, with 
+      the coverage area based on January 1, 2000 legal boundaries.  A 
+      complete set of 108th CD Census 2000 TIGER/Line files includes all 
+      counties and statistically equivalent entities in the United States, 
+      Puerto Rico, and the Island Areas as of January 1, 2000.  The 108th 
+      CD Census 2000 TIGER/Line files do not include a file for Broomfield 
+      County, CO which became effective November 15, 2001.  The Census 
+      TIGER database represents a seamless national file with no overlaps 
+      or gaps between parts.  However, each county-based TIGER/Line file 
+      is designed to stand alone as an independent data set or the files 
+      can be combined to cover the whole Nation.  The 108th CD Census 2000 
+      TIGER/Line files consist of line segments representing physical 
+      features and governmental and statistical boundaries.  The boundary 
+      information in the TIGER/Line files are for statistical data 
+      collection and tabulation purposes only; their depiction and 
+      designation for statistical purposes does not constitute a 
+      determination of jurisditional authority or rights of ownership or 
+      entitlement.  The files contain information distributed over a 
+      series of record types for the spatial objects of a county.  There 
+      are 17 record types, including the basic data record, the shape 
+      coordinate points, and geographic codes that can be used with to 
+      prepare maps.  Other geographic information contained in the files 
+      includes attributes such as feature identifiers/census feature 
+      class codes (CFCC) used to differentiate feature types, address 
+      ranges and ZIP Codes, codes for legal and statistical entities, 
+      latitude/longitude coordinates of linear and point features, 
+      landmark point features, area landmarks, key geographic features, 
+      and area boundaries.  The 108th CD Census 2000 TIGER/Line data 
+      dictionary contains a complete list of all the fields in the 17 
+      record types.</gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>To show county boundaries and to be used with other census projects. In order for others to use the information in the Census TIGER 
+      database in a geographic information system (GIS) or for other 
+      geographic applications, the Census Bureau releases to the public 
+      extracts of the database in the form of TIGER/Line files.  Various 
+      versions of the TIGER/Line files have been released on an irregular 
+      schedule since 1990; previous versions include the 1990 Census 
+      TIGER/Line files, the 1992 TIGER/Line files, the 1994 TIGER/Line 
+      files, the 1995 TIGER/Line files, the 1997 TIGER/Line files, the 
+      1998 TIGER/Line files, the 1999 TIGER/Line files, the Redistricting 
+      Census 2000 TIGER/Line files, the Census 2000 TIGER/Line files, and
+      the 2002 TIGER/Line files.</gco:CharacterString>
+            </purpose>
+            <credit>
+                <gco:CharacterString>State of Nebraska, US Census Bureau</gco:CharacterString>
+            </credit>
+            <status gco:nilReason="missing"/>
+            <pointOfContact>
+                <CI_ResponsibleParty>
+                    <individualName>
+                        <gco:CharacterString>State  GIS Coordinator</gco:CharacterString>
+                    </individualName>
+                    <organisationName>
+                        <gco:CharacterString>State of Nebraska</gco:CharacterString>
+                    </organisationName>
+                    <positionName>
+                        <gco:CharacterString>State GIS Coordinator</gco:CharacterString>
+                    </positionName>
+                    <contactInfo>
+                        <CI_Contact>
+                            <address>
+                                <CI_Address>
+                                    <deliveryPoint>
+                                        <gco:CharacterString>501 S 14th St</gco:CharacterString>
+                                    </deliveryPoint>
+                                    <city>
+                                        <gco:CharacterString>Lincoln</gco:CharacterString>
+                                    </city>
+                                    <administrativeArea>
+                                        <gco:CharacterString>NE</gco:CharacterString>
+                                    </administrativeArea>
+                                    <postalCode>
+                                        <gco:CharacterString>68508</gco:CharacterString>
+                                    </postalCode>
+                                </CI_Address>
+                            </address>
+                            <onlineResource>
+                                <CI_OnlineResource>
+                                    <linkage>
+                                        <URL>withheld</URL>
+                                    </linkage>
+                                    <protocol>
+                                        <gco:CharacterString>website</gco:CharacterString>
+                                    </protocol>
+                                </CI_OnlineResource>
+                            </onlineResource>
+                        </CI_Contact>
+                    </contactInfo>
+                    <role>
+                        <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+                    </role>
+                </CI_ResponsibleParty>
+            </pointOfContact>
+            <resourceMaintenance>
+                <MD_MaintenanceInformation>
+                    <maintenanceAndUpdateFrequency>
+                        <MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="unknown" codeSpace="ISOTC211/19115">unknown</MD_MaintenanceFrequencyCode>
+                    </maintenanceAndUpdateFrequency>
+                </MD_MaintenanceInformation>
+            </resourceMaintenance>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Nebraska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Nebraska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Vector</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Political Boundary</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Boundary</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Vector</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Political Boundary</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Boundary</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Vector</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Political Boundary</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Boundary</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Vector</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Political Boundary</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Boundary</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>County</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Vector</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Political Boundary</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Boundary</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <resourceConstraints>
+                <MD_Constraints>
+                    <useLimitation>
+                        <gco:CharacterString>The public information contained herein is furnished as a public service by the State of Nebraska Office of the CIO GIS Shared Services ("The State"). The State makes no warranties, either expressed or implied, concerning the accuracy, completeness, reliability, or suitability of the information for any other particular use. Furthermore, the State assumes no liability associated with the use or misuse of said information.</gco:CharacterString>
+                    </useLimitation>
+                </MD_Constraints>
+            </resourceConstraints>
+            <resourceConstraints>
+                <MD_LegalConstraints>
+                    <useLimitation>
+                        <gco:CharacterString>The State of Nebraska makes no representation or warranty as to its accuracy, timeliness, or completeness, and in particular, its accuracy in labeling or displaying dimensions, contours, property boundaries, or placement or location of any map features thereon. For more current data We recommend that you contact the county assessor. No metadata was provided to the State of Nebraska. Therefore, the metadata provided through this data is limited and does not meet State standards. This data does not represent a legal survey and may not meet National Map Accuracy Standards. It is for graphical purposes only. THE STATE OF NEBRASKA MAKES NO WARRANTY OF MERCHANTABILITY OR WARRANTY FOR FITNESS OF USE FOR A PARTICULAR PURPOSE, EXPRESSED OR IMPLIED, WITH RESPECT TO THESE MAP PRODUCTS OR THE UNDERLYING DATA. Any users of this data, accepts same AS IS, WITH ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the State harmless from and against all damage, loss, or liability arising from any use of this map product. Please contact State GIS Coordinator, 402-471-2761</gco:CharacterString>
+                    </useLimitation>
+                </MD_LegalConstraints>
+            </resourceConstraints>
+            <language>
+                <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+            </language>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+            <topicCategory>
+                <MD_TopicCategoryCode>boundaries</MD_TopicCategoryCode>
+            </topicCategory>
+            <topicCategory>
+                <MD_TopicCategoryCode>society</MD_TopicCategoryCode>
+            </topicCategory>
+            <extent>
+                <EX_Extent>
+                    <geographicElement>
+                        <EX_GeographicBoundingBox>
+                            <westBoundLongitude>
+                                <gco:Decimal>-106</gco:Decimal>
+                            </westBoundLongitude>
+                            <eastBoundLongitude>
+                                <gco:Decimal>-95</gco:Decimal>
+                            </eastBoundLongitude>
+                            <southBoundLatitude>
+                                <gco:Decimal>40</gco:Decimal>
+                            </southBoundLatitude>
+                            <northBoundLatitude>
+                                <gco:Decimal>43</gco:Decimal>
+                            </northBoundLatitude>
+                        </EX_GeographicBoundingBox>
+                    </geographicElement>
+                </EX_Extent>
+            </extent>
+            <supplementalInformation>
+                <gco:CharacterString>To find out more about TIGER/Line files and other Census TIGER
+      database derived data sets visit 
+http://www.census.gov/geo/www/tiger.</gco:CharacterString>
+            </supplementalInformation>
+        </MD_DataIdentification>
+    </identificationInfo>
+    <distributionInfo>
+        <MD_Distribution>
+            <distributionFormat>
+                <MD_Format>
+                    <name>
+                        <gco:CharacterString>REST Service or download</gco:CharacterString>
+                    </name>
+                    <version>
+                        <gco:CharacterString>ArcGIS 10.7</gco:CharacterString>
+                    </version>
+                </MD_Format>
+            </distributionFormat>
+        </MD_Distribution>
+    </distributionInfo>
+    <dataQualityInfo>
+        <DQ_DataQuality>
+            <scope>
+                <DQ_Scope>
+                    <level>
+                        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="feature" codeSpace="ISOTC211/19115">feature</MD_ScopeCode>
+                    </level>
+                    <levelDescription>
+                        <MD_ScopeDescription>
+                            <attributes uuidref="feature attributes"/>
+                        </MD_ScopeDescription>
+                    </levelDescription>
+                    <levelDescription>
+                        <MD_ScopeDescription>
+                            <features uuidref="feature class name"/>
+                        </MD_ScopeDescription>
+                    </levelDescription>
+                </DQ_Scope>
+            </scope>
+        </DQ_DataQuality>
+    </dataQualityInfo>
+    <metadataMaintenance>
+        <MD_MaintenanceInformation>
+            <maintenanceAndUpdateFrequency>
+                <MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded" codeSpace="ISOTC211/19115">asNeeded</MD_MaintenanceFrequencyCode>
+            </maintenanceAndUpdateFrequency>
+        </MD_MaintenanceInformation>
+    </metadataMaintenance>
+</MD_Metadata>
