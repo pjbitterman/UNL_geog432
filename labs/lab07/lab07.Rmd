@@ -35,7 +35,7 @@ This lab will help you become more comfortable with developing spatial weights m
     2. "Print" to the notebook the average number of neighbors
     3. Choose one areal unit of interest (e.g., a county), make a plot of the unit and its neighbors, similar to what we completed in class. NOTE, you MUST use a different (but appropriate) color scheme than what we used in class
     4. Row-standardized the *W*
-    5. Using a variable of interest in your dataset, calcuate the a lagged variable
+    5. Using a variable of interest in your dataset, calculate the spatially-lagged value of variable in that neighborhood
     6. Make a Moran Plot
     
 4. Repeat #3 above with a W developed using the distance-band method
@@ -56,7 +56,7 @@ HINT: ```numpy.where()``` is a useful function for generating a new attribute ba
 
 2. How does your analysis in this lab (as simple as it is) differ by how you have formalized W (e.g., space, neighbors) in two different methods? How might it affect analysis?
 
-3. What does it mean if an observation falls in the "H-L" quadrant? Why might it be useful to detect such occurances?
+3. What does it mean if an observation falls in the "H-L" quadrant? Why might it be useful to detect such occurrences (e.g., think of a real-world example)?
 
 4. Walk me through your process in completing task 5 above. What challenges did you encounter and how did you overcome them?
 
