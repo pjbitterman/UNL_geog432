@@ -25,9 +25,19 @@ In this lab, you will calculate global and local indicators of spatial autocorre
 
 ### Tasks:
 
-1. Using the dataset found in unit12inclassdata.zip in our GitHub repository, **select a variable of interest**. As discussed during lecture, real-world data is often messy. To create your the shapefile, I started with the **ACS_10_5YR_County** dataset found at https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html -> 2010 Census -> 2006 - 2010 Detailed Tables -> Counties. The direct link can be found here: http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip
+1. As discussed during lecture, real-world data is often messy. To create your the shapefile, I started with the **ACS_10_5YR_County** dataset found at:
 
-Because there were a VERY large number of attributes (columns) I further subsetted the data prior to exporting FROM a feature class in a GeoDatabase TO a shapefile. During this export, ArcGIS renamed many of the fields because the shapefile specification only allows attribute names to be 10 characters long or less. The fields I exported include the range from "DP3_HC01_VC04" to "DP3_HC04_VC93" (original names). You will need to link the OLD field name (also found in the CSV) to the new ESRI-generated sequential scheme, as we discussed in class. I understand this step may be confusing at first, but it is representative of real-world problem solving with often messy data. Try some of the strategies we discussed in class. If you have questions, please contact me EARLY.
+https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html -> 2010 Census -> 2006 - 2010 Detailed Tables -> Counties. 
+
+The direct link can be found here: 
+
+http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip
+
+Because there were a VERY large number of attributes (columns) I further subsetted the data prior to exporting FROM a feature class in a GeoDatabase TO a shapefile. During this export, ArcGIS renamed many of the fields because the shapefile specification only allows attribute names to be 10 characters long or less. The fields I exported include the range from "DP3_HC01_VC04" to "DP3_HC04_VC93" (original names). 
+
+Using the dataset found in week13data.zip in our GitHub repository, you will be using the variable named **DP3_HC0_66**. 
+
+Your first task is to identify which variable **from the original dataset** you are using. You will need to connect the OLD field name (also found in the CSV) to the new ESRI-generated sequential scheme, as we discussed in class. I understand this step may be confusing at first, but it is representative of real-world problem solving with often messy data. Try some of the strategies we discussed in class. If you have questions, please contact me EARLY.
 
 2. Create a spatial subset of the US, with at AT MINIMUM 4 states, MAXIMUM 7 states. States must be contiguous
 
@@ -49,16 +59,18 @@ Because there were a VERY large number of attributes (columns) I further subsett
 
 ### Questions:
 
-1. Describe in your own words *how Moran's I is calculated*
+1. What is the original variable that has been renamed to the **DP3_HC0_66** variable you used?
 
-2. Explain and defend your formalization of W. Why is the representation of space that you chose appropriate for your analysis? Make a convincing case.
+2. Describe in your own words *how Moran's I is calculated*
 
-3. Reflect on the 8 labs from this semester. How does your skillset differ from when you started? How does using open source tools compare to your experience in ArcGIS Pro and ArcPy?
+3. Explain and defend your formalization of W. Why is the representation of space that you chose appropriate for your analysis? Make a convincing case.
+
+4. Reflect on the 8 labs from this semester. How does your skillset differ from when you started? How does using open source tools compare to your experience in ArcGIS Pro and ArcPy?
 
 
 ### What to turn in
 
-- Your Jupyter notebook (do not turn it in as a Python script). I must be able to run your code - do not turn in a screenshot or code pasted into a Microsoft Word document
+- Your Jupyter notebook (do NOT turn it in as a Python script). I must be able to run your code - do not turn in a screenshot or code pasted into a Microsoft Word document
 
 - The answers to the above questions
 

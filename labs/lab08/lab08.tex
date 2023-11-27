@@ -108,16 +108,18 @@ understanding of underlying concepts and theory.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Using the dataset found in unit12inclassdata.zip in our GitHub
-  repository, \textbf{select a variable of interest}. As discussed
-  during lecture, real-world data is often messy. To create your the
-  shapefile, I started with the \textbf{ACS\_10\_5YR\_County} dataset
-  found at
-  \url{https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html}
-  -\textgreater{} 2010 Census -\textgreater{} 2006 - 2010 Detailed
-  Tables -\textgreater{} Counties. The direct link can be found here:
-  \url{http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip}
+  As discussed during lecture, real-world data is often messy. To create
+  your the shapefile, I started with the \textbf{ACS\_10\_5YR\_County}
+  dataset found at:
 \end{enumerate}
+
+\url{https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html}
+-\textgreater{} 2010 Census -\textgreater{} 2006 - 2010 Detailed Tables
+-\textgreater{} Counties.
+
+The direct link can be found here:
+
+\url{http://www2.census.gov/geo/tiger/TIGER_DP/2010ACS/2010_ACS_5YR_County.gdb.zip}
 
 Because there were a VERY large number of attributes (columns) I further
 subsetted the data prior to exporting FROM a feature class in a
@@ -125,12 +127,18 @@ GeoDatabase TO a shapefile. During this export, ArcGIS renamed many of
 the fields because the shapefile specification only allows attribute
 names to be 10 characters long or less. The fields I exported include
 the range from ``DP3\_HC01\_VC04'' to ``DP3\_HC04\_VC93'' (original
-names). You will need to link the OLD field name (also found in the CSV)
-to the new ESRI-generated sequential scheme, as we discussed in class. I
-understand this step may be confusing at first, but it is representative
-of real-world problem solving with often messy data. Try some of the
-strategies we discussed in class. If you have questions, please contact
-me EARLY.
+names).
+
+Using the dataset found in week13data.zip in our GitHub repository, you
+will be using the variable named \textbf{DP3\_HC0\_66}.
+
+Your first task is to identify which variable \textbf{from the original
+dataset} you are using. You will need to connect the OLD field name
+(also found in the CSV) to the new ESRI-generated sequential scheme, as
+we discussed in class. I understand this step may be confusing at first,
+but it is representative of real-world problem solving with often messy
+data. Try some of the strategies we discussed in class. If you have
+questions, please contact me EARLY.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -165,6 +173,9 @@ me EARLY.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
+  What is the original variable that has been renamed to the
+  \textbf{DP3\_HC0\_66} variable you used?
+\item
   Describe in your own words \emph{how Moran's I is calculated}
 \item
   Explain and defend your formalization of W. Why is the representation
@@ -181,7 +192,7 @@ me EARLY.
 
 \begin{itemize}
 \item
-  Your Jupyter notebook (do not turn it in as a Python script). I must
+  Your Jupyter notebook (do NOT turn it in as a Python script). I must
   be able to run your code - do not turn in a screenshot or code pasted
   into a Microsoft Word document
 \item
