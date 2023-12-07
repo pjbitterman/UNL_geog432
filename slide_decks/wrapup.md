@@ -2,7 +2,7 @@
 marp: true
 size: 16:9 
 paginate: true
-#footer: Week 13.02
+#footer: Week 16.xx
 ---
 
 
@@ -10,7 +10,7 @@ paginate: true
 
 #
 
-## Unit 15.02: Wrap up
+## Week 16: Wrap up
 
 ### Dr. Bitterman
 
@@ -21,13 +21,18 @@ paginate: true
 # Today's schedule
 
 - Open discussion
-- Slides, discussion
+- Presentations
+- Reflection
 - For next class
 - Open work time
 
 ---
 
 # Open discussion
+
+---
+
+# Presentations
 
 ---
 
@@ -97,9 +102,5 @@ By the end of the term, students will be able to successfully:
 
 # For next class
 
-- No class meeting on Friday (work on your own, but let me know if questions and I can be present)
-- Do your evaluations (please)
+- NOTHING!
 
----
-
-# Work time
