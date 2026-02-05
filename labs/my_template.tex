@@ -9,6 +9,12 @@ $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
 \usepackage{amssymb,amsmath}
+% --- Pandoc image wrapper (Pandoc >= 3.2.1) ---
+\usepackage{graphicx}
+
+\providecommand{\pandocbounded}[1]{#1}
+% ---------------------------------------------
+
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex

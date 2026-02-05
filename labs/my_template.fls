@@ -1,0 +1,6 @@
+PWD /Users/pjbitterman/GitRepos/UNL_geog432/labs
+INPUT /Users/pjbitterman/Library/TinyTeX/texmf.cnf
+INPUT /Users/pjbitterman/Library/TinyTeX/texmf-dist/web2c/texmf.cnf
+INPUT /Users/pjbitterman/Library/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex
+OUTPUT my_template.log

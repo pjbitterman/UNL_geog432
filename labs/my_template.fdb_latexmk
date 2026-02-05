@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1769437405.12257 "/Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex" "my_template.pdf" "my_template" 1769437405.1607 2
+  "$documentclass$.cls" 0 -1 0 ""
+  "/Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex" 1769437403.26584 8737 f02aaa11eba2f349bcc8a4d528c0e45a ""
+  "/Users/pjbitterman/Library/TinyTeX/texmf-dist/web2c/texmf.cnf" 1749313668 42213 4e2ca030e8e2640502016e9e45868dcb ""
+  "/Users/pjbitterman/Library/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1769436965 2236360 05bef3ea2425e5ed445f6103644b5886 ""
+  "/Users/pjbitterman/Library/TinyTeX/texmf.cnf" 1769436949.66904 708 85fd07691b6294ba94c59dbc62380410 ""
+  "my_template.aux" 0 -1 0 "pdflatex"
+  "my_template.tex" 1769437403.26584 8737 f02aaa11eba2f349bcc8a4d528c0e45a ""
+  (generated)
+  "my_template.aux"
+  "my_template.log"
+  "my_template.pdf"
+  (rewritten before read)

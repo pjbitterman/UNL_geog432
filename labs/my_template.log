@@ -1,0 +1,33 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.26)  26 JAN 2026 09:23
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex
+(/Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+! LaTeX Error: File `$documentclass$.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+/Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex:2: Emergency stop.
+<read *> 
+         
+l.2 $
+     if(fontfamily)$^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 20 strings out of 469514
+ 601 string characters out of 5468562
+ 433756 words of memory out of 5000000
+ 28772 multiletter control sequences out of 15000+600000
+ 627721 words of font info for 40 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 19i,0n,29p,271b,17s stack positions out of 10000i,1000n,20000p,200000b,200000s
+/Users/pjbitterman/GitRepos/UNL_geog432/labs/my_template.tex:2:  ==> Fatal error occurred, no output PDF file produced!
